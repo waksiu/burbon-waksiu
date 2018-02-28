@@ -1,5 +1,5 @@
 language:
-    JAVASCRIPT
+    node_js
 script:
 
 env:
