@@ -1,3 +1,7 @@
+language:
+    JAVASCRIPT
+script:
+
 env:
   global:
     - "FTP_USER=capital"
