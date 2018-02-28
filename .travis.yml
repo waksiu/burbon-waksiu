@@ -4,15 +4,15 @@ env:
     - "FTP_PASSWORD=IC31kqjm50"
 
 language:
-    php
+    generic
 
-before_install:
+#before_install:
+#
+#install:
+#
+#before_script:
 
-install:
+script: curl --ftp-create-dirs -T static.html -u $FTP_USER:$FTP_PASSWORD ftp://s26.zenbox.pl/domains/capitaltemplate.com/public_html/templates/bourbon/demo/
 
-before_script:
-
-script:
-
-after_success:
-    "curl --ftp-create-dirs -T static.html -u $FTP_USER:$FTP_PASSWORD ftp://s26.zenbox.pl/domains/capitaltemplate.com/public_html/templates/bourbon/demo/"
+#after_success:
+#    "curl --ftp-create-dirs -T static.html -u $FTP_USER:$FTP_PASSWORD ftp://s26.zenbox.pl/domains/capitaltemplate.com/public_html/templates/bourbon/demo/"
