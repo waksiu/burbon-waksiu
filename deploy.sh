@@ -10,4 +10,7 @@ function deployFromTo () {
 }
 
 deployFromTo "*" "domains/capitaltemplate.com/public_html/templates/bourbon/demo/"
+deployFromTo "multipage" "domains/capitaltemplate.com/public_html/templates/bourbon/demo/multipage"
 deployFromTo "css/*" "domains/capitaltemplate.com/public_html/templates/bourbon/demo/css/"
+deployFromTo "sass/*" "domains/capitaltemplate.com/public_html/templates/bourbon/demo/sass/"
+deployFromTo "js/*" "domains/capitaltemplate.com/public_html/templates/bourbon/demo/js/"
