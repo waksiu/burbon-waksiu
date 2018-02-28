@@ -1,0 +1,1 @@
+curl --ftp-create-dirs -T static.html -u $FTP_USER:$FTP_PASSWORD ftp://s26.zenbox.pl/domains/capitaltemplate.com/public_html/templates/bourbon/demo/
