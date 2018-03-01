@@ -194,15 +194,16 @@ section#team .inner {
   font-size: 1em;
   letter-spacing: 0.35em;
   margin-bottom: 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: rgba(49, 49, 49, 0.6); }
 
 .text-aboutus {
-  color: #313131;
+  color: rgba(49, 49, 49, 0.8);
   text-align: justify;
   font-weight: 300; }
 
 .text-aboutteam {
-  color: #313131;
+  color: rgba(49, 49, 49, 0.8);
   text-align: justify; }
 
 .plans div h2 {
@@ -260,6 +261,7 @@ section#team .inner {
   width: 2rem;
   height: 2rem;
   opacity: 0.6;
+  margin-top: 20px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -464,7 +466,7 @@ a:hover figcaption {
   padding: 1rem 0rem 0.5rem 0rem; }
 
 .what p {
-  color: #313131;
+  color: rgba(49, 49, 49, 0.8);
   font-size: 1em;
   text-align: justify; }
 
@@ -527,13 +529,13 @@ a:hover figcaption {
 
 #InputMessage {
   background: transparent;
-  height: 10rem; }
+  height: 7rem; }
   @media (min-width: 1024px) {
     #InputMessage {
-      height: 7rem; } }
+      height: 6rem; } }
   @media (min-width: 1920px) {
     #InputMessage {
-      height: 12rem; } }
+      height: 8rem; } }
 
 input[type="text"] {
   background-color: transparent !important; }
@@ -844,7 +846,7 @@ blockquote footer, blockquote small, blockquote .small {
 .download p {
   background-repeat: no-repeat;
   margin: 0 auto 1.5rem;
-  color: #313131;
+  color: rgba(49, 49, 49, 0.8);
   font-size: 1em; }
 
 .download-w p {
