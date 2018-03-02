@@ -232,6 +232,29 @@ section#team .inner {
   color: #fff;
   position: relative; }
 
+.plans h2 {
+  font-weight: 100;
+  margin-bottom: 0.1em; }
+
+.plans h4 {
+  color: #e8e4e3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 3rem; }
+
+.plans h3 {
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.plans p {
+  color: #f3f2f0;
+  padding: 0.1em;
+  line-height: 2rem;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
 .plans-border {
   border: 1px solid #becfd3;
   width: 20rem;
@@ -254,7 +277,7 @@ section#team .inner {
 .social-icon-team {
   display: table;
   margin: 0 auto;
-  padding: 0px; }
+  padding: 0; }
 
 .icon-team {
   list-style: none;
@@ -334,7 +357,19 @@ section#team .inner {
 .counters {
   text-align: center;
   background-image: url("../images/background1.jpg");
-  padding: 1rem; }
+  padding: 1rem;
+  color: #fff; }
+
+.counters h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 2rem; }
+
+.counters h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem; }
 
 ul#counterDown {
   list-style: none;
@@ -348,10 +383,10 @@ ul#counterDown li {
   display: inline-block; }
 
 ul#counterDown li span {
-  font-size: 5vh;
+  font-size: 3rem;
   font-weight: 100;
   line-height: 5rem;
-  padding: 3vh; }
+  padding: 1rem; }
 
 ul#counterDown li.seperator {
   font-size: 4rem;

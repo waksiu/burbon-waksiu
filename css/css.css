@@ -440,30 +440,8 @@ body{
     width: 100%;
 }
 
-.plans h2 {
-    font-weight: 100;
-    margin-bottom: .1em;
-}
 
-.plans h4 {
-    color: #e8e4e3;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 
-.plans h3 {
-    font-weight: 100;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.plans p {
-    color: #f3f2f0;
-    padding: .1em;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-}
 
 .btn-plans1 {
     border: 1px solid #fff;
@@ -497,32 +475,6 @@ body{
     -ms-transform: translate3d(-50%,-50%,0);
     -o-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
-}
-
-.counters h2 {
-    color: #313131;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 18px;
-}
-
-.counters h3 {
-    color: #313131;
-    font-weight: 100;
-    font-size: 18px;
-}
-
-.counters h2 {
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 18px;
-}
-
-.counters h3 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 14px;
 }
 
 ul.count-down {
