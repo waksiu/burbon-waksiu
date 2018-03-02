@@ -40,74 +40,46 @@
 <!-- Preloader-end -->
 
 
-    <div class="jumbotron jumbo img-responsive">
-        <div class="container counter-content">
-
-            <div class="col-md-12 counters">
-                <section>
-                <h3>STAY TUNED</h3>
-                <div class="testimonial-border-white"></div>
-                <h3>Our project is almost ready. Premiere is coming:</h3>
-                <ul class="count-down countdown " id="example">
-                    <li><span class="days">00</span>
-
-                        <p class="D_text">D</p></li>
-                    <li class="seperator"></li>
-                    <li><span class="hours">00</span>
-
-                        <p class="H_text">H</p></li>
-                    <li class="seperator"></li>
-                    <li><span class="minutes">00</span>
-
-                        <p class="M_text">M</p></li>
-                    <li class="seperator"></li>
-                    <li><span class="seconds">00</span>
-
-                        <p class="S_text">S</p></li>
+<div class="jumbotron jumbo img-responsive">
+    <div class="container counter-content">
+        <div class="col-md-12 counters">
+            <h3>STAY TUNED</h3>
+            <div class="testimonial-border-white"></div>
+            <h3>Our project is almost ready. Premiere is coming:</h3>
+            <ul class="count-down countdown" id="counterDown">
+            </ul>
+            <div class="social-icon">
+                <ul class="social-icon">
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerPinterest"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerFacebook"></a>
+                    </li>
+                    <li class="icon">
+                        <a href="#" target="_blank" id="footerTwitter"></a>
+                    </li>
                 </ul>
-                <div class="social-icon">
-                    <ul class="social-icon">
-                        <li class="icon">
-                            <a href="#" target="_blank" id="footerPinterest"></a>
-                        </li>
-                        <li class="icon">
-                            <a href="#" target="_blank" id="footerFacebook"></a>
-                        </li>
-                        <li class="icon">
-                            <a href="#" target="_blank" id="footerTwitter"></a>
-                        </li>
-                    </ul>
-                </div>
-                </section>
             </div>
         </div>
     </div>
-    <div class="opac"></div>
+</div>
+<div class="opac"></div>
 
 <!--[jumotron end]-->
 
 <!--[footer]-->
 <div class="container-fluid footer" style="position: fixed; bottom: 0; width: 100%; height:75px;">
     <!--<div class="row">-->
-        <div class="col-md-12">
-            <div id="footer-text">
-                <h4>Bourbon Co. Creative Agency</h4>
-                <p>Made with love - All rights Reserved</p>
-            </div>
+    <div class="col-md-12">
+        <div id="footer-text">
+            <h4>Bourbon Co. Creative Agency</h4>
+            <p>Made with love - All rights Reserved</p>
+        </div>
         <!--</div>-->
     </div>
 </div>
 <!--[footer-end]-->
-
-<!-- jQuery Plugin -->
-<script src="../js/jquery.countdown.js"></script>
-<script>
-    $('#example').countdown({
-        date: '12/24/2022 23:59:59'
-    }, function () {
-        alert('Merry Christmas!');
-    });
-</script>
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
@@ -116,6 +88,7 @@
 <!--[animate-number]-->
 <script src="../js/jquery.waypoints.min.js"></script>
 <script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.countdown.min.js"></script>
 <script src="../js/svgembedder.min.js"></script>
 <!-- Owl carousel js plugin -->
 <script src="../owl-carousel/owl.carousel.min.js"></script>
@@ -126,7 +99,6 @@
 <script src="../js/scrollReveal.min.js"></script>
 <!-- Scrolling Nav JavaScript -->
 <script src="../js/jquery.easing.min.js"></script>
-<script src="../js/scrolling-nav.js"></script>
 <script src="../js/jquery.vide.min.js"></script>
 <script src="../js/mixitup.min.js"></script>
 <script src="../js/jquery.lettering.js"></script>

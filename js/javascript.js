@@ -182,5 +182,25 @@ $(document).ready(function( $ ) {
     $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(350).css({'overflow':'visible'});
+
+    if( $('#counterDown').length ) {
+        $("#counterDown").countdown(
+            "2020/01/01",
+            function(event) {
+                $(this).html(
+                    event.strftime(
+                        '<li><span class="days">%D</span><p class="D_text">D</p></li>\n' +
+                        '                    <li class="seperator"></li><li><span class="hours">%H</span><p class="H_text">H</p></li>\n' +
+                        '                    <li class="seperator"></li><li><span class="minutes">%M</span><p class="M_text">M</p></li>\n' +
+                        '                    <li class="seperator"></li><li><span class="seconds">%S</span><p class="S_text">S</p></li>')
+                );
+            });
+
+        <!--$('#example').countdown({-->
+        <!--date: '12/24/2022 23:59:59'-->
+        <!--}, function () {-->
+        <!--alert('Merry Christmas!');-->
+        <!--});-->
+    }
 });
 
