@@ -57,7 +57,7 @@ body
     margin-left: #{$baseMarginH}
     margin-right: #{$baseMarginH}
 
-.tlt span
+.tlt span, .tlt-ver2 span
     color: white
     font-size: 2rem
     text-transform: uppercase
@@ -66,12 +66,12 @@ body
     font-weight: 100
 
 .tlt-ver2 span
-    color: white
-    font-size: 4rem
-    text-transform: uppercase
-    text-indent: 0.7rem
     letter-spacing: 0.1rem
     font-weight: 700
+    @media #{$media-m}
+        font-size: 3rem
+    @media #{$media-l}
+        font-size: 4rem
 
 .tlt p
     color: white
