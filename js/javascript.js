@@ -139,7 +139,7 @@ $(document).ready(function( $ ) {
 
     // ScrollReveal
     window.sr = new ScrollReveal(); //{ reset: true }
-    // sr.reveal('.row');
+    sr.reveal('.revealSubTitle', { delay: 1500, origin: 'bottom', duration: 2000 });
 
     $('section[data-type="background"]').each(function(){
 // declare the variable to affect the defined data-type
