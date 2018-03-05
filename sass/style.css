@@ -265,8 +265,12 @@ section#team .inner {
   width: 20rem;
   padding-top: 2rem;
   margin-bottom: 3rem;
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media (min-width: 1920px) {
+    .plans-border {
+      margin-left: 2rem;
+      margin-right: 2rem; } }
   @media (min-width: 3392px) {
     .plans-border {
       margin-left: 3rem;
