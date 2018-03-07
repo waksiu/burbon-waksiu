@@ -144,9 +144,13 @@ section#works
     background-image: url("../images/background1.jpg")
 
 section .inner
-    padding: #{$innerPadding}
+    padding-left: #{$innerPadding}
+    padding-right: #{$innerPadding}
+    padding-bottom: #{$innerPadding}
     @media #{$media-xl}
-        padding: #{$innerPadding}
+        padding-left: #{$innerPadding}
+        padding-right: #{$innerPadding}
+        padding-bottom: #{$innerPadding}
 
 section#team .inner
     text-align: center
@@ -302,8 +306,7 @@ section#team .inner
 .social-icon-team
     display: table
     margin: 0 auto
-    padding: 0
-
+    padding: 0 0 1rem
 
 .icon-team
     list-style: none
@@ -318,7 +321,7 @@ section#team .inner
     width: 2rem
     height: 2rem
     opacity: 0.6
-    margin-top: 1.25rem
+    margin: 0 auto
     -webkit-transition: all 0.5s ease-in-out
     -moz-transition: all 0.5s ease-in-out
     -o-transition: all 0.5s ease-in-out
@@ -621,7 +624,9 @@ a:hover figcaption
     text-align: justify
 
 .icons
-    padding: 1rem
+    padding-left: #{$innerPadding}
+    padding-right: #{$innerPadding}
+    padding-bottom: #{$innerPadding}
     text-align: center
 
 .icons .lnr
@@ -1069,13 +1074,11 @@ blockquote footer, blockquote small, blockquote .small
     height: 100%
 
 #status
-    width: 20rem
+    background: url("../images/status.gif") no-repeat center
     height: 100%
     margin: 0 auto
-    background-image:  url("../images/status.gif") //* path to your loading animation */
+    //* path to your loading animation */
     background-size: 20rem
-    background-repeat:  no-repeat
-    background-position:  center
 
 // STATIC
 .jumbotron-table
