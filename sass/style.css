@@ -474,6 +474,13 @@ ul.count-down li p {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: none !important; }
 
+.progress-animation-start {
+  -webkit-animation: progress-bar-animation 3s;
+  animation: progress-bar-animation 3s; }
+
+@keyframes progress-bar-animation {
+  0% {
+    width: 0; } }
 section#works h2 {
   color: white;
   margin: 0;
@@ -995,7 +1002,7 @@ blockquote footer, blockquote small, blockquote .small {
 
 #status {
   width: 20rem;
-  height: 1;
+  height: 100%;
   margin: 0 auto;
   background-image: url("../images/status.gif");
   background-size: 20rem;

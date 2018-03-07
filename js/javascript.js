@@ -2,6 +2,17 @@
 
 // background color - navigation
 $(document).ready(function(){
+    var progressSet = false;
+
+    // PROGRESS BAR ONLOAD
+    if ( progressSet==false && $('.progress').visible() ) {
+        $('.progress-bar').each(function( index, v ) {
+            var progressValue = $(v).attr("progress-value");
+            $(v).css("width", progressValue).addClass("progress-animation-start");
+        });
+        progressSet = true;
+    }
+
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
@@ -12,6 +23,16 @@ $(document).ready(function(){
                 $(".navbar-scroll-background").css("background", "transparent");
             }
         }
+
+        // PROGRESS ON SCROLL
+        if ( progressSet==false && $('.progress').visible() ) {
+            $('.progress-bar').each(function( index, v ) {
+                var progressValue = $(v).attr("progress-value");
+                $(v).css("width", progressValue).addClass("progress-animation-start");
+            });
+            progressSet = true;
+        }
+
     })
 })
 // background color - navigation -end
