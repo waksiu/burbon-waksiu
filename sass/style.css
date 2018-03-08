@@ -4,10 +4,10 @@ html {
   @media (min-width: 320px) {
     html {
       font-size: 0.8125rem;
-      line-height: calc(0.8125rem * 1.2); } }
+      line-height: 0.8125rem; } }
   @media (min-width: 768px) {
     html {
-      font-size: calc(0.8125rem*1.1);
+      font-size: calc(0.8125rem * 1.1);
       line-height: calc(0.8125rem * 1.1); } }
   @media (min-width: 1024px) {
     html {
@@ -83,25 +83,26 @@ h1, h2, h3, h4, h5 {
   text-align: center; }
 
 h1 {
-  font-size: 1.6rem; }
+  font-size: 2.369rem; }
 
 h2 {
-  font-size: 1.4rem; }
+  font-size: 1.7777rem; }
 
 h3 {
-  font-size: 1.2rem; }
+  font-size: 1.333rem; }
 
 h4 {
   font-size: 1rem; }
 
 h5 {
-  font-size: 0.8rem; }
+  font-size: 0.75rem; }
 
 section, .space404 {
   padding: 5rem 1rem; }
   @media (min-width: 768px) {
     section, .space404 {
-      padding: 5rem; } }
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   @media (min-width: 1024px) {
     section, .space404 {
       padding-left: 2rem;
@@ -278,11 +279,14 @@ section#team .inner {
 
 .plans-border {
   border: 1px solid #becfd3;
-  width: 20rem;
+  width: 15rem;
   padding-top: 2rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem; }
+  @media (min-width: 1024px) {
+    .plans-border {
+      width: 20rem; } }
   @media (min-width: 1920px) {
     .plans-border {
       margin-left: 2rem;
