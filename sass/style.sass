@@ -27,8 +27,13 @@ $baseMarginH: 2rem
 $innerPadding: 1rem
 
 html
-    font-size: #{$baseFontSize}
-    line-height: calc(#{$baseFontSize} * 1.2)
+    font-size: calc(#{$baseFontSize}*0.7)
+    line-height: calc(#{$baseFontSize} * 0.8)
+
+    @media #{$media-mobile}
+
+        font-size: #{$baseFontSize}
+        line-height: calc(#{$baseFontSize} * 1.2)
 
     @media #{$media-s}
         font-size: calc(#{$baseFontSize}*1.1)
@@ -61,14 +66,18 @@ body
     color: white
     font-size: 2rem
     text-transform: uppercase
-    text-indent: 0.7rem
-    letter-spacing: 0.7rem
+    text-indent: 0.1rem
+    letter-spacing: 0.1rem
     font-weight: 100
+    @media #{$media-mobile}
+        font-size: 2rem
+        text-indent: 0.7rem
+        letter-spacing: 0.7rem
 
 .tlt-ver2 span
     letter-spacing: 0.1rem
     font-weight: 700
-    @media #{$media-m}
+    @media #{$media-mobile}
         font-size: 3rem
     @media #{$media-l}
         font-size: 4rem
@@ -82,8 +91,6 @@ body
     padding-top: 2rem
 
 .title h1
-    font-size: 4vh
-    letter-spacing: 4vh
     display: inline-block
     text-transform: uppercase
     margin: 1em .0em .5em 0em
@@ -144,9 +151,13 @@ section#works
     background-image: url("../images/background1.jpg")
 
 section .inner
-    padding-left: #{$innerPadding}
-    padding-right: #{$innerPadding}
-    padding-bottom: #{$innerPadding}
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 0
+    @media #{$media-mobile}
+        padding-left: #{$innerPadding}
+        padding-right: #{$innerPadding}
+        padding-bottom: #{$innerPadding}
     @media #{$media-xl}
         padding-left: #{$innerPadding}
         padding-right: #{$innerPadding}
@@ -1098,6 +1109,9 @@ blockquote footer, blockquote small, blockquote .small
 
 .team-text img
     margin-bottom: 1rem
+    width: 80%
+    @media #{$media-mobile}
+        width: auto
 
 // VIDEO
 .video-container

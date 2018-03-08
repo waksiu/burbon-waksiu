@@ -1,6 +1,10 @@
 html {
-  font-size: 0.8125rem;
-  line-height: calc(0.8125rem * 1.2); }
+  font-size: calc(0.8125rem*0.7);
+  line-height: calc(0.8125rem * 0.8); }
+  @media (min-width: 320px) {
+    html {
+      font-size: 0.8125rem;
+      line-height: calc(0.8125rem * 1.2); } }
   @media (min-width: 768px) {
     html {
       font-size: calc(0.8125rem*1.1);
@@ -37,14 +41,19 @@ body {
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  text-indent: 0.7rem;
-  letter-spacing: 0.7rem;
+  text-indent: 0.1rem;
+  letter-spacing: 0.1rem;
   font-weight: 100; }
+  @media (min-width: 320px) {
+    .tlt span, .tlt-ver2 span {
+      font-size: 2rem;
+      text-indent: 0.7rem;
+      letter-spacing: 0.7rem; } }
 
 .tlt-ver2 span {
   letter-spacing: 0.1rem;
   font-weight: 700; }
-  @media (min-width: 1024px) {
+  @media (min-width: 320px) {
     .tlt-ver2 span {
       font-size: 3rem; } }
   @media (min-width: 1366px) {
@@ -60,8 +69,6 @@ body {
   padding-top: 2rem; }
 
 .title h1 {
-  font-size: 4vh;
-  letter-spacing: 4vh;
   display: inline-block;
   text-transform: uppercase;
   margin: 1em 0em 0.5em 0em; }
@@ -127,9 +134,14 @@ section#works {
   background-image: url("../images/background1.jpg"); }
 
 section .inner {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem; }
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
+  @media (min-width: 320px) {
+    section .inner {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem; } }
   @media (min-width: 1920px) {
     section .inner {
       padding-left: 1rem;
@@ -1034,7 +1046,11 @@ blockquote footer, blockquote small, blockquote .small {
   vertical-align: middle; }
 
 .team-text img {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 80%; }
+  @media (min-width: 320px) {
+    .team-text img {
+      width: auto; } }
 
 .video-container {
   height: 100%;
