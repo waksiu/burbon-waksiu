@@ -7,7 +7,7 @@ $(document).ready(function(){
     // PROGRESS BAR ONLOAD
     if ( progressSet==false && $('.progress').visible() ) {
         $('.progress-bar').each(function( index, v ) {
-            var progressValue = $(v).attr("progress-value");
+            var progressValue = $(v).attr("data-progress-value");
             $(v).css("width", progressValue).addClass("progress-animation-start");
         });
         progressSet = true;
@@ -27,7 +27,7 @@ $(document).ready(function(){
         // PROGRESS ON SCROLL
         if ( progressSet==false && $('.progress').visible() ) {
             $('.progress-bar').each(function( index, v ) {
-                var progressValue = $(v).attr("progress-value");
+                var progressValue = $(v).attr("data-progress-value");
                 $(v).css("width", progressValue).addClass("progress-animation-start");
             });
             progressSet = true;

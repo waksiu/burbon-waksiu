@@ -279,12 +279,18 @@ section#team .inner {
 
 .plans-border {
   border: 1px solid #becfd3;
-  width: 15rem;
   padding-top: 2rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  width: 15rem; }
+  @media (min-width: 320px) {
+    .plans-border {
+      width: 18rem; } }
   @media (min-width: 1024px) {
+    .plans-border {
+      width: 18rem; } }
+  @media (min-width: 1366px) {
     .plans-border {
       width: 20rem; } }
   @media (min-width: 1920px) {
