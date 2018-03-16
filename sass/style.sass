@@ -88,6 +88,7 @@ body
     text-indent: 0.2rem
     letter-spacing: 0.2rem
     padding-top: 2rem
+    color: #b3b2b9
 
 .title h1
     display: inline-block
@@ -177,7 +178,6 @@ section#team .inner
 
 .logo-brand h2
     color: #313131
-    font-weight: 100
     font-size: 1.4rem
     text-transform: uppercase
     text-align: center
@@ -291,10 +291,11 @@ section#team .inner
     
 .plans p
     color: #f3f2f0
-    padding: .1em
+    padding: 0.1em
     line-height: 2rem
     margin-bottom: 0
-    text-transform: uppercase
+    text-transform: capitalize
+    font-weight: 100
 
 .plans-border
     border: 1px solid #becfd3
@@ -667,6 +668,7 @@ a:hover figcaption
 // CONTACT
 #buttonContact
     margin-bottom: 2rem
+    font-weight: 700
     @media #{$media-m}
         margin-bottom: 0rem
 
@@ -966,7 +968,7 @@ blockquote footer, blockquote small, blockquote .small
     color: #fff
     text-align: center
     margin-top: 1rem
-    font-weight: 100
+    font-weight: 300
     font-size: .9em
     letter-spacing: 5px
     text-transform: uppercase
@@ -1055,7 +1057,6 @@ blockquote footer, blockquote small, blockquote .small
 
 .download h2
     color: #313131
-    font-weight: 100
     text-transform: uppercase
 
 .download-w h2
@@ -1079,6 +1080,7 @@ blockquote footer, blockquote small, blockquote .small
     color: #313131
     text-transform: uppercase
     padding: 0.8rem
+    font-weight: 700
 
 .opac
     background-color: rgba(0,0,0,0.5)
@@ -1315,9 +1317,10 @@ blockquote footer, blockquote small, blockquote .small
 
 .text-subpages h2
     font-size: 1rem
-    letter-spacing: 0.2rem
+    letter-spacing: 0.1rem
     margin-top: 1rem
     margin-bottom: 1rem
+    font-weight: 100
 
 .text-subpages p
     font-size: 0.7rem
@@ -1428,3 +1431,39 @@ blockquote footer, blockquote small, blockquote .small
     margin-top: 5px
     display: inline-block
     padding: 5px
+
+#return-to-top
+    position: fixed
+    bottom: 20px
+    right: 20px
+    background: url(../images/background1.jpg)
+    width: 50px
+    height: 50px
+    display: block
+    text-decoration: none
+    -moz-border-radius: 35px
+    display: none
+    -webkit-transition: all 0.3s linear
+    -moz-transition: all 0.3s ease
+    -ms-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+
+#return-to-top i
+    color: #fff
+    margin: 0
+    position: relative
+    left: 16px
+    top: 13px
+    font-size: 19px
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -ms-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+
+#return-to-top:hover i
+    color: #fff
+    top: 5px
+
+

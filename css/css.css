@@ -425,7 +425,6 @@ body{
 .plans-pricing h2 {
     text-align: center;
     color: #fff;
-    font-weight: 100;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -645,6 +644,7 @@ ul.count-down li p {
     text-transform: uppercase;
     padding: 15px;
     margin: 15px 5px 0px 5px;
+    font-weight: 700;
 }
 
 .buy-theme-white:hover {
