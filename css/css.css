@@ -389,12 +389,13 @@ body{
 }
 
 .team-text h2 {
+    font-family: "Raleway", sans-serif;
     color: #313131;
-    font-weight: 400;
-    font-size: 0.8rem;
-    letter-spacing: .3em;
-    margin-bottom: 1.2em;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.8em;
+    text-transform: capitalize;
     padding-top: 1em;
 }
 
