@@ -754,12 +754,22 @@ hr {
 
 .navbar-brand {
   padding: 0;
-  display: inline;
-  overflow: hidden; }
+  display: table; }
 
 .navbar-brand img {
-  float: left;
-  height: 2.5rem; }
+  height: 2.5rem;
+  display: table-cell;
+  margin-left: 1rem; }
+
+.navbar-brand .logo {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 1rem;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-indent: 0.1rem;
+  font-weight: 100; }
 
 .navbar-default {
   background-color: transparent;
