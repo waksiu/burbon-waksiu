@@ -632,7 +632,6 @@ a:hover figcaption {
 .icons {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1rem;
   text-align: center; }
 
 .icons .lnr {
@@ -1378,5 +1377,8 @@ blockquote footer, blockquote small, blockquote .small {
 #return-to-top:hover i {
   color: #fff;
   top: 5px; }
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #777; }
 
 /*# sourceMappingURL=style.css.map */
