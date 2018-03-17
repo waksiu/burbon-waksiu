@@ -13,6 +13,18 @@ $(function(){
         progressSet = true;
     }
 
+    $(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".navbar-scroll-background").css("background", "rgba(49, 49, 49, 0.8)");
+        }
+        else {
+            if ($(".navbar").hasClass("collapsed")) {
+                $(".navbar-scroll-background").css("background", "transparent");
+            }
+        }
+    });
+
     $(window).on('scroll', function(){
         var scroll = $(window).scrollTop();
         if (scroll > 100) {

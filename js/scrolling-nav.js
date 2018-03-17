@@ -1,14 +1,14 @@
 "use strict";
 
 var $navbarHeight = undefined;
-$(document).ready(function( $ ) {
+$(function( $ ) {
     if ($navbarHeight===undefined) {
         $navbarHeight = $('.navbar-expand-lg').outerHeight();
     }
 });
 
 //jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
+$(window).on('scroll', function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
@@ -18,7 +18,7 @@ $(window).scroll(function() {
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll').on('click', function(event) {
         var $anchor = $(this);
 
         var offset = $($anchor.attr('href')).offset();
