@@ -345,11 +345,13 @@ body{
 
 }
 .carousel-caption p {
-    color: #fff;
+    color: #d3d2d9;
     font-size: 2.3vh;
     letter-spacing: 1px;
     margin-top: 0;
     margin-bottom: 1em;
+    font-family: raleway;
+    font-weight: 300;
 }
 
 .item h3 {
