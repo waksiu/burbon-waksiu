@@ -1,7 +1,7 @@
 "use strict";
 
 // background color - navigation
-$(document).ready(function(){
+$(function(){
     var progressSet = false;
 
     // PROGRESS BAR ONLOAD
@@ -13,7 +13,19 @@ $(document).ready(function(){
         progressSet = true;
     }
 
-    $(window).scroll(function(){
+    $(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".navbar-scroll-background").css("background", "rgba(49, 49, 49, 0.8)");
+        }
+        else {
+            if ($(".navbar").hasClass("collapsed")) {
+                $(".navbar-scroll-background").css("background", "transparent");
+            }
+        }
+    });
+
+    $(window).on('scroll', function(){
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
             $(".navbar-scroll-background").css("background" , "rgba(49, 49, 49, 0.8)");
@@ -44,7 +56,7 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').on('click', function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);
@@ -61,7 +73,7 @@ $(".navbar-toggler").on("click", function(){
     }
 });
 
-$(document).ready(function( $ ) {
+$(function( $ ) {
     // subscribe:
     $("#buttonSubscribe").on("click", function(){
         var vemail = $("#email").val();
