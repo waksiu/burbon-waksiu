@@ -9,8 +9,8 @@ function deployFromTo () {
 	done
 }
 
-deployFromTo "*" "domains/capitaltemplate.com/public_html/templates/burbon-snapshot/demo/"
-deployFromTo "multipage/*" "domains/capitaltemplate.com/public_html/templates/burbon-snapshot/demo/multipage/"
-deployFromTo "css/*" "domains/capitaltemplate.com/public_html/templates/burbon-snapshot/demo/css/"
-deployFromTo "sass/*" "domains/capitaltemplate.com/public_html/templates/burbon-snapshot/demo/sass/"
-deployFromTo "js/*" "domains/capitaltemplate.com/public_html/templates/burbon-snapshot/demo/js/"
+deployFromTo "*" "domains/capitaltemplate.com/public_html/templates/bourbon-snapshot/demo/"
+deployFromTo "multipage/*" "domains/capitaltemplate.com/public_html/templates/bourbon-snapshot/demo/multipage/"
+deployFromTo "css/*" "domains/capitaltemplate.com/public_html/templates/bourbon-snapshot/demo/css/"
+deployFromTo "sass/*" "domains/capitaltemplate.com/public_html/templates/bourbon-snapshot/demo/sass/"
+deployFromTo "js/*" "domains/capitaltemplate.com/public_html/templates/bourbon-snapshot/demo/js/"
